@@ -1,6 +1,6 @@
 
-<p>Hello! {{currentUser.userName}}</p>
-<div class="container-fluid">
+<!-- <p>Hello! {{currentUser.userName}}</p> -->
+<!-- <div class="container-fluid">
   <div class="row">
 
     <div class="col-3">
@@ -9,7 +9,33 @@
     <div class="col-9">
       <app-chat-messages></app-chat-messages>
     </div>
-    <app-left-side-bar></app-left-side-bar>
+    <div>
+      <app-left-side-bar></app-left-side-bar>
+    </div>
+    
 
+  </div>
+</div> -->
+
+<div>
+  <app-navbar></app-navbar>
+  <p>Hello! {{currentUser.userName}}</p>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-3">
+      <!-- One of three columns -->
+      <app-left-side-bar></app-left-side-bar>
+      <app-user-chats></app-user-chats>
+    </div>
+    <div class="col-sm-7">
+      <!-- One of three columns -->
+      <app-chat-messages></app-chat-messages>
+    </div>
+    <div class="col-sm-2">
+      <!-- One of three columns -->
+      <app-right-side-bar></app-right-side-bar>
+    </div>
   </div>
 </div>

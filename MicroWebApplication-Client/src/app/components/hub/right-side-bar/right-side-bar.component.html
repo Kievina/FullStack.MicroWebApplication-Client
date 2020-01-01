@@ -1,15 +1,48 @@
-
+<h3> Right Side Bar </h3>
+<p>right-side-bar works!</p>
 
 <!-- This vertical tab container is from bootstrap. Not sure yet whether we need to download another package to make it work.
         See this link https://github.com/dbtek/bootstrap-vertical-tabs  ---MS -->
 
-<div class="col-xs-3">
-    <!-- required for floating -->
-    <!-- Nav tabs -->
-    <ul class="nav nav-tabs tabs-right">
+<!-- <div class="col-xs-3"> -->
+<!-- required for floating -->
+<!-- Nav tabs -->
+<!-- <ul class="nav nav-tabs tabs-right">
         <li class="active"><a href="#home-r" data-toggle="tab">Home</a></li>
         <li><a href="#profile-r" data-toggle="tab">Profile</a></li>
         <li><a href="#messages-r" data-toggle="tab">Messages</a></li>
         <li><a href="#settings-r" data-toggle="tab">Settings</a></li>
     </ul>
+</div> -->
+
+<div class="container">
+
+
+<div class="col-md-3">
+    <ul class="nav nav-pills nav-stacked" role="tablist">
+    <li class="active"><a data-toggle="pill" href="#home">Home</a></li>
+    <li><a data-toggle="pill" href="#profile">Profile</a></li>
+    <li><a data-toggle="pill" href="#friends">Friends</a></li>
+    <li><a data-toggle="pill" href="#polls">Polls</a></li>
+    </ul>
+</div>
+
+<div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+      <h3>Home</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+    <div id="profile" class="tab-pane fade">
+      <h3>Profile</h3>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <div id="friends" class="tab-pane fade">
+      <h3>Friends</h3>
+      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+    </div>
+    <div id="polls" class="tab-pane fade">
+      <h3>Polls</h3>
+      <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+    </div>
+  </div>
 </div>
