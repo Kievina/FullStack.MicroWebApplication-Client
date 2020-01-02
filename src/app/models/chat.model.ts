@@ -1,11 +1,11 @@
 export class Chat   {
-  public id: number;
+  public chatId: number;
   public chatName: string;
   public timeStamp: string;
 
 
-  constructor(id: number, chatName: string, timeStamp: string) {
-    this.id = id;
+  constructor(chatId: number, chatName: string, timeStamp: string) {
+    this.chatId = chatId;
     this.chatName = chatName;
     this.timeStamp = timeStamp;
   }

@@ -1,8 +1,9 @@
-<p>Hello! {{currentUser.userName}}</p>
 <div class="container-fluid">
   <div class="row">
 
     <div class="col-3">
+      <p>Hello! {{currentUser.userName}}</p>
+      <a class="btn btn-primary" role="button" (click)="logoutCLick()">Logout</a>
       <app-user-chats></app-user-chats>
     </div>
     <div class="col-9">
