@@ -13,14 +13,21 @@ import { Chat } from '../../../models/chat.model';
 export class ChatMessagesComponent implements OnInit {
   private messages: Message[];
   messageInput;
+  chatName;
 
   constructor(private messageService: MessageService,
               private chatService: ChatService,
               private userService: UserService) {
     chatService.getCurrentChatObservable().subscribe((chat: Chat) => {
       if (chat != null) {
+        this.chatName = chat.chatName;
         messageService.getAllMessages(chat.chatId).subscribe((messages: Message[]) => {
           this.messages = messages;
+        });
+        messageService.getMessageObserver().subscribe(message => {
+          console.log(message);
+          this.messages.push(message);
+          console.log(this.messages);
         });
       }
     });
