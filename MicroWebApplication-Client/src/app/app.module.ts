@@ -23,7 +23,6 @@ import { UserMessagesComponent } from './components/hub/user-messages/user-messa
 import { RightSideBarComponent } from './components/hub/right-side-bar/right-side-bar.component'; // optional, provides moment-style pipes for date formatting
 
 
-
 @NgModule({
   declarations: [
     AppComponent,
